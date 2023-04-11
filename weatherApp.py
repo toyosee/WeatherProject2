@@ -42,7 +42,7 @@ def get_weather(city):
 	#weather = response.json()
 	if city:
 		try:
-			weather_key = "e9f7181d7a971a4988fa535f6bb1e775"
+			weather_key = ""
 			url = "https://api.openweathermap.org/data/2.5/weather"
 			params = {'APPID': weather_key, 'q': city, 'units': 'Metric'}
 			response = requests.get(url, params=params)
